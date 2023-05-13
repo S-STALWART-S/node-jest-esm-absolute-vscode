@@ -1,0 +1,15 @@
+{
+  // "editor.formatOnSave": true,
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll": true,
+  // "source.organizeImports": true,
+  //   "source.sortMembers": true
+  // },
+  "editor.tabSize": 2,
+  "explorerExclude.backup": {},
+  "files.eol": "\n",
+  "eslint.options": {
+    "overrideConfigFile": "configs/eslint/local.cjs",
+  },
+  "eslint.format.enable": true
+}
