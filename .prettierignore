@@ -1,0 +1,13 @@
+.git
+.github
+.nyc_output
+.trashcan
+build
+built
+coverage
+dist
+lib
+node_modules
+public
+tests.svg
+thunder-tests
