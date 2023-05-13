@@ -1,17 +1,19 @@
 {
-    "version": "0.2",
-    "ignorePaths": [],
-    "dictionaryDefinitions": [],
-    "dictionaries": [],
-    "words": [],
-    "ignoreWords": [
-        "chalker",
-        "flowtype",
-        "rushstack",
-        "sindresorhus",
-        "snyk",
-        "sonarjs",
-        "superjson"
-    ],
-    "import": []
+  "version": "0.2",
+  "ignorePaths": [],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "words": [],
+  "ignoreWords": [
+    "Parens",
+    "chalker",
+    "flowtype",
+    "linebreak",
+    "rushstack",
+    "sindresorhus",
+    "snyk",
+    "sonarjs",
+    "superjson"
+  ],
+  "import": []
 }
