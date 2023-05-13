@@ -4,6 +4,14 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [],
-    "ignoreWords": [],
+    "ignoreWords": [
+        "chalker",
+        "flowtype",
+        "rushstack",
+        "sindresorhus",
+        "snyk",
+        "sonarjs",
+        "superjson"
+    ],
     "import": []
 }
