@@ -50,8 +50,5 @@
     "showInlineError": "true"
   },
   "testing.defaultGutterClickAction": "run",
-  "yaml.format.enable": true,
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  "yaml.format.enable": true
 }
