@@ -21,7 +21,8 @@
     "check:types": "tsc --noEmit",
     "setup:git": "husky install",
     "start": "node --no-warnings --loader ./loader.js src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:dev",
+    "test:dev": "jest"
   },
   "dependencies": {
     "@redis/json": "^1.0.4",

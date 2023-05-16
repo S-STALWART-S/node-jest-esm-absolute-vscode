@@ -151,7 +151,7 @@ const rules = {
   "newline-per-chained-call": [
     ERROR,
     {
-      ignoreChainWithDepth: 1,
+      ignoreChainWithDepth: 4,
     },
   ],
   "no-alert": ERROR,
