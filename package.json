@@ -14,15 +14,18 @@
   },
   "homepage": "https://github.com/spila-dev/e-commerce-backend#readme",
   "scripts": {
-    "check:format": "prettier --write  --list-different ./",
-    "check:lint": "eslint --config configs/eslint/main.cjs --fix ./",
+    "build": "tsc --noEmit",
+    "check:format": "prettier --write ./",
+    "check:lint": "eslint ./",
     "check:security": "snyk test & snyk code test",
-    "check:style": "npm run check:format && npm run check:lint && npm run check:types",
+    "check:style": "npm run check:format && npm run check:lint",
     "check:types": "tsc --noEmit",
     "setup:git": "husky install",
-    "start": "node --no-warnings --loader ./loader.js src/index.ts",
+    "start": "node --loader ./loader.js src/index.ts",
     "test": "npm run test:dev",
-    "test:dev": "jest"
+    "test-runner": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:coverage": "cross-env COVERAGE=true npm run test:dev",
+    "test:dev": "npm run test-runner"
   },
   "dependencies": {
     "@redis/json": "^1.0.4",
@@ -42,8 +45,11 @@
     "socket.io": "^4.6.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/eslint-parser": "^7.19.1",
     "@cspell/eslint-plugin": "^6.29.2",
     "@faker-js/faker": "^7.6.0",
+    "@jest/globals": "^29.5.0",
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/confusing-browser-globals": "^1.0.0",
     "@types/fs-extra": "^11.0.1",
@@ -53,6 +59,7 @@
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
     "confusing-browser-globals": "^1.0.11",
+    "cross-env": "^7.0.3",
     "esbuild": "^0.17.11",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.8.0",
@@ -71,6 +78,7 @@
     "nodemon": "^2.0.21",
     "ping": "^0.4.4",
     "prettier": "2.8.4",
+    "pretty-error": "^4.0.0",
     "snyk": "^1.1118.0",
     "socket.io-client": "^4.6.1",
     "ts-jest": "^29.1.0",
